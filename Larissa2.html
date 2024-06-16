@@ -66,12 +66,10 @@
               <a href="#grafico1" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>Casos por UF</a>
             </li>
-            <!--
             <li class="nav-item">
               <a href="#grafico2" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>Influência ambiental</a>
             </li>
-            -->
             <li class="nav-item">
               <a href="#grafico3" class="nav-link text-dark font-italic bg-light">
                 <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>Epidemiologia em BH</a>
@@ -129,19 +127,12 @@
             <p>A dengue é uma doença infecciosa causada pelo <em>Dengue Virus</em> (DENV), pertencente ao gênero Flavivirus e à família Flaviviridae. Existem quatro sorotipos distintos do vírus da dengue, conhecidos: DENV-1, DENV-2, DENV-3 e DENV-4. Cada sorotipo pode causar a doença, e a infecção por um sorotipo não proporciona imunidade duradoura contra os outros. </p>
             <h4>O Vírus da Dengue</h4>
             <p>O vírus da dengue é um RNA vírus, o que significa que seu material genético é composto de ácido ribonucleico. Essa característica permite uma rápida replicação e variação genética, tornando o controle e a erradicação da doença um desafio significativo. O vírus afeta principalmente células do sistema imunológico, como macrófagos e células dendríticas, e também pode infectar outros tipos de células do corpo.</p> 
-            
             <h4>O Vetor</h4>
-            <div class="row">
-              <div class="col-md-3">
-                <div class="image-container">
-                  <img src="aedes.jpg" class="img-fluid float-left" alt="Aedes Aegypti" title="Aedes aegypti" > <!-- width="303.2" height="200.8" -->
-                </div>
-              </div>
-              <div class="col-md-9 mt-3">
-                <p>O vetor principal da dengue é o mosquito <em>Aedes aegypti</em>, um inseto facilmente reconhecível por suas listras brancas e pretas no corpo e nas pernas. O <em>Aedes aegypti</em> é um mosquito urbano, adaptado a viver em ambientes próximos aos humanos. Ele se reproduz em água parada, seja em recipientes artificiais como pneus e vasos de plantas, ou em ambientes naturais.</p>
-              </div>
-            </div>  
-            <h4 class="mt-3">Transmissão</h4>
+            <div class="image-container">
+              <img src="aedes.jpg" alt="Aedes Aegypti" title="Aedes aegypti" width="303.2" height="200.8">
+            </div>
+            <p>O vetor principal da dengue é o mosquito <em>Aedes aegypti</em>, um inseto facilmente reconhecível por suas listras brancas e pretas no corpo e nas pernas. O <em>Aedes aegypti</em> é um mosquito urbano, adaptado a viver em ambientes próximos aos humanos. Ele se reproduz em água parada, seja em recipientes artificiais como pneus e vasos de plantas, ou em ambientes naturais.</p>
+            <h4>Transmissão</h4>
             <p>A transmissão da dengue ocorre principalmente através da picada do mosquito <em>Aedes aegypti</em> infectado. Quando um mosquito pica uma pessoa infectada com o vírus da dengue, ele ingere o sangue contendo o vírus. O vírus então se replica no mosquito e pode ser transmitido a outras pessoas quando o mosquito pica novamente.</p>
             <p>Além da transmissão por mosquitos, é importante notar que a dengue não é transmitida diretamente de pessoa para pessoa. No entanto, em raras ocasiões, pode ocorrer transmissão vertical (de mãe para filho durante a gravidez ou o parto) ou por meio de transfusões de sangue e transplantes de órgãos.</p>
             <h4>Sintomas</h4>
@@ -219,55 +210,43 @@
               <li>No ano de 2020 houve um número anormal de casos no estado do Ceará.</li>
             </ul>
             <p>Utilizando os botões acima do gráfico é possível isolar apenas os dados da região <b>sudeste</b> e visualizar essa região na forma de <b>barras sobrepostas</b>. Essa forma de visualização possibilita ver com mais precisão qual é a contribuição de cada UF para o número total de casos da região Sudeste.</p>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- Button group à esquerda -->
-                <div class="btn-group" role="group" aria-label="Button group à esquerda">
-                  <button type="button" class="btn btn-secondary active" id="btn1">Brasil</button>
-                  <button type="button" class="btn btn-secondary"        id="btn2">Sudeste</button>
-                </div>
-              </div>
-              <div class="col-md-6 d-flex justify-content-end">
-                <!-- Button group à direita -->
-                <div class="btn-group" role="group" aria-label="Button group à direita">
-                  <button type="button" class="btn btn-secondary"        id="btn3">Barra Sobreposta</button>
-                </div>
-              </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary active" id="btn1">Brasil</button>
+                <button type="button" class="btn btn-secondary"        id="btn2">Sudeste</button>
+                <button type="button" class="btn btn-secondary"        id="btn3">Barra Sobreposta</button>
             </div>
+            
 
-            <div class="">
+            <div class="row">
               <div id="content1" class="content-div active">
-                <div id="brasil" class="iframe-container">     <iframe src="casos_brasil_lin.html"  class="embed-responsive-item" scrolling="no" frameborder="0"></iframe></div>
+                <div id="brasil"><iframe src="brasil.html"></iframe></div>
               </div>  
               <div id="content2" class="content-div">
-                <div id="sudeste" class="iframe-container">    <iframe src='casos_sudeste_lin.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe></div>
+                <div id="sudeste"><iframe src='sudeste.html'></iframe></div>
               </div>  
               <div id="content3" class="content-div">
-                <div id="bar-sudeste" class="iframe-container"><iframe src='bar-sudeste.html'       class="embed-responsive-item" scrolling="no" frameborder="0"></iframe></div>
+                <div id="bar-sudeste"><iframe src='bar-sudeste.html'></iframe></div>
               </div>  
             </div>  
           </section>
-<!--
+
           <section id="grafico2"    class="section">
-            <h2>Gráfico Precipitação e Temperatura no Sudeste </h2>
+            <h2>Impacto da variação de precipitação e temperatura no número de casos </h2>
   
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-md-6">
                       <h4>Precipitação</h4>
-                      <div id="sudeste-p" class="iframe-container" >
-                        <iframe src='sudeste(p).html'  class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                      <div id="sudeste-p" class="p-3 border bg-light">
+                        <iframe src='sudeste(p).html'></iframe>
                       </div>  
                 </div>      
-            </div>
-            <div class="row">
-                <div class="col-12">
-                        <h4>Temperatura</h4> 
-                        <div id="sudeste-t" class="iframe-container">
-                          <iframe src='sudeste(t).html'  class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                <div class="col-12 col-md-6">
+                        <h2>Temperatura</h2> 
+                        <div id="sudeste-t" class="p-3 border bg-light">
+                          <iframe src='sudeste(t).html'></iframe>
                         </div>
                 </div>
             </div>
-            
             <div class="row">
                 <div class="col-12">
                   <h2>Casos de Dengue</h2>
@@ -276,11 +255,10 @@
                   </div>
                 </div>
             </div>
-          
 
-        </section>
--->
-        <section id="grafico3"    class="section">
+          </section>
+
+          <section id="grafico3"    class="section">
             <h2 class="text-primary mb-3">Epidemia de Dengue em Belo Horizonte no primeiro quadrimestre de 2024</h2>
             <p>De Janeiro a Abril de 2024 o país vivenciou uma epidemia de dengue com um grande aumento no número de casos com relação aos anos anteriores. Uma possível causa para isso são as alterações climáticas anuais ocasionadas pelo aquecimento global que alteram temperatura e fenômenos pluviométricos</p>
             <p>Plotamos então os dados de casos registrados em Belo Horizonte para esse período, em relação à temperatura e precipitação. Em 2024 para esse período, tanto as médias de temperatura quanto precipitação registradas para a cidade foram maiores que em 2023. Apesar disso, não é possível determinar apenas com esses dados se as variáveis de caráter climático são suficientes para explicar o aumento no número de casos de dengue.</p>
@@ -288,26 +266,26 @@
             <div class="row">
               <div class="col-12 col-md-6">
                     <h5 class="mt-3">Média das temperaturas máximas diárias ao longo da semana</h5>
-                    <div id="BHtempmax" class="iframe-container">
-                      <iframe src='BHtempmax.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                    <div id="BHtempmax" class="p-3 border bg-light">
+                      <iframe src='BHtempmax.html'></iframe>
                     </div>  
               </div>      
               <div class="col-12 col-md-6">
                       <h5 class="mt-3">Média da umidade relativa máxima diária do ar ao longo da semana</h5> 
-                      <div id="BHumidmax" class="iframe-container">
-                        <iframe src='BHumidmax.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                      <div id="BHumidmax" class="p-3 border bg-light">
+                        <iframe src='BHumidmax.html'></iframe>
                       </div>
               </div>
-            </div>
-            <div class="row">
+          </div>
+          <div class="row">
               <div class="col-6">
                 <h5 class="mt-3">Número de casos de Dengue notificados por semana</h5>
-                <div id="BHCasosDengue" class="iframe-container">
-                  <iframe src='BHCasosDengue.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                <div id="BHCasosDengue" class="p-3 border bg-light">
+                  <iframe src='BHCasosDengue.html'></iframe>
                 </div>
               </div>
               <div class="col-6"></div>
-            </div>
+          </div>
         </section>
 
 
@@ -318,23 +296,20 @@
           <div class="row">
               <div class="col-12">
                     <h4>Região Sudeste</h4>
-                    <div id="sudeste-mapa" class="iframe-container">
-                      <iframe src='sudestee_mapa.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                    <div id="sudeste-mapa" class="p-3 border bg-light">
+                      <iframe src='sudestee_mapa.html'></iframe>
                     </div>  
               </div>      
-          </div>
-          <div class="row"></div>
               <div class="col-12">
                       <h2>Região Nordeste</h2> 
-                      <p>A grande variação de quantidade de casos por estado confirma que o crescimento da doença ocorre em áreas específicas ou regiões particulares, em vez de uma disseminação uniforme em todas as regiões. Esse crescimento pode ser influenciado por vários fatores locais que favorecem a reprodução e sobrevivência do mosquito vetor, Aedes aegypti, além de outros fatores ambientais, sociais e econômicos.</p>
-                      <div id="nordeste_mapa" class="iframe-container">
-                        <iframe src='nordeste_mapa.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
+                      <div id="nordeste_mapa" class="p-3 border bg-light">
+                        <iframe src='nordeste_mapa.html'></iframe>
                       </div>
               </div>
           </div>
         </section>
 
-</div>
+        </div>
         <!-- End demo content -->
 <!-- Estrutura da Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
