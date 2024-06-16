@@ -208,43 +208,55 @@
 
           <section id="grafico1" class="section">
             <h2>Casos de Dengue</h2>
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-secondary active" id="btn1">Brasil</button>
-                <button type="button" class="btn btn-secondary"        id="btn2">Sudeste</button>
-                <button type="button" class="btn btn-secondary"        id="btn3">Barra Sobreposta</button>
-            </div>
-            
-
             <div class="row">
+              <div class="col-md-6">
+                <!-- Button group à esquerda -->
+                <div class="btn-group" role="group" aria-label="Button group à esquerda">
+                  <button type="button" class="btn btn-secondary active" id="btn1">Brasil</button>
+                  <button type="button" class="btn btn-secondary"        id="btn2">Sudeste</button>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end">
+                <!-- Button group à direita -->
+                <div class="btn-group" role="group" aria-label="Button group à direita">
+                  <button type="button" class="btn btn-secondary"        id="btn3">Barra Sobreposta</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
               <div id="content1" class="content-div active">
-                <div id="brasil"><iframe src="brasil.html"></iframe></div>
+                <div id="brasil" class="iframe-container">     <iframe src="casos_brasil_lin.html"  class="embed-responsive-item" scrolling="no" frameborder="0"></iframe></div>
               </div>  
               <div id="content2" class="content-div">
-                <div id="sudeste"><iframe src='sudeste.html'></iframe></div>
+                <div id="sudeste" class="iframe-container">    <iframe src='casos_sudeste_lin.html' class="embed-responsive-item" scrolling="no" frameborder="0"></iframe></div>
               </div>  
               <div id="content3" class="content-div">
-                <div id="bar-sudeste"><iframe src='bar-sudeste.html'></iframe></div>
+                <div id="bar-sudeste" class="iframe-container"><iframe src='bar-sudeste.html'       class="embed-responsive-item" scrolling="no" frameborder="0"></iframe></div>
               </div>  
             </div>  
           </section>
 
           <section id="grafico2"    class="section">
-            <h2>Gráfico Precipitação e Temperatura x Casos </h2>
+            <h2>Gráfico Precipitação e Temperatura no Sudeste </h2>
   
             <div class="row">
-                <div class="col-12 col-md-6">
-                      <h4>Preciptação</h4>
-                      <div id="sudeste-p" class="p-3 border bg-light">
-                        <iframe src='sudeste(p).html'></iframe>
+                <div class="col-12">
+                      <h4>Precipitação</h4>
+                      <div id="sudeste-p" class="iframe-container" >
+                        <iframe src='sudeste(p).html'  class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
                       </div>  
                 </div>      
-                <div class="col-12 col-md-6">
-                        <h2>Temperatura</h2> 
-                        <div id="sudeste-t" class="p-3 border bg-light">
-                          <iframe src='sudeste(t).html'></iframe>
+             </div>
+             <div class="row"></div>   
+                <div class="col-12">
+                        <h4>Temperatura</h4> 
+                        <div id="sudeste-t" class="iframe-container">
+                          <iframe src='sudeste(t).html'  class="embed-responsive-item" scrolling="no" frameborder="0"></iframe>
                         </div>
                 </div>
             </div>
+            <!--
             <div class="row">
                 <div class="col-12">
                   <h2>Casos de Dengue</h2>
@@ -253,6 +265,7 @@
                   </div>
                 </div>
             </div>
+          -->
 
           </section>
 
